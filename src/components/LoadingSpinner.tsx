@@ -9,7 +9,12 @@ const gradient =
 
 export const LoadingSpinner: React.FC<Props> = () => {
   return (
-    <Box responsive margin={{ top: "large", bottom: "large" }}>
+    <Box
+      responsive
+      justify="center"
+      alignSelf="center"
+      margin={{ top: "large", bottom: "large" }}
+    >
       <Spinner
         background={gradient}
         size="large"

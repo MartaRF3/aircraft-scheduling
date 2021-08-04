@@ -19,8 +19,6 @@ export const useGetAircraftsQuery = () => {
       onSuccess: () =>
         setAppContext({
           ...appContext,
-          submitted: false,
-          usersPerPageChanged: false,
         }),
     }
   );

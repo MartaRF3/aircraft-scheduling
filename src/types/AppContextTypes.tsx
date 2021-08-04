@@ -10,10 +10,7 @@ export enum SortOption {
 }
 
 export type AppContextProps = {
-  githubLogin: string;
-  submitted: boolean;
-  usersPerPageChanged: boolean;
   sort: SortOption;
-  usersPerPage: string;
+  flightsPerPage: string;
   page: number;
 };

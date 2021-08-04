@@ -22,11 +22,8 @@ const client = new QueryClient();
 
 function App() {
   const [context, setContext] = useState<AppContextProps>({
-    githubLogin: "",
-    submitted: false,
     sort: SortOption.DepartureASC,
-    usersPerPage: "9",
-    usersPerPageChanged: false,
+    flightsPerPage: "25",
     page: 1,
   });
 
