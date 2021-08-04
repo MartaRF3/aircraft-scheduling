@@ -87,3 +87,8 @@ https://www.npmjs.com/package/msw-storybook-addon)
 Also is integrated snapshottesting pro story, the snapshots pro story will be
 created by npm run test.
 (https://www.npmjs.com/package/@storybook/addon-storyshots)
+
+## HTTP client
+
+In this project it would be used axios as HTTP client for the browser and node.js.
+I worked before with react-query and axios, the combination of both is really straight foward.
