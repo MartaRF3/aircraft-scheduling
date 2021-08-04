@@ -1,47 +1,47 @@
-import {Box, Grommet} from 'grommet'
-import {Header} from './components/Header'
+import { Box, Grommet } from "grommet";
+import { Header } from "./components/Header";
 
-import {QueryClient, QueryClientProvider} from 'react-query'
-import {ReactQueryDevtools} from 'react-query/devtools'
-import {useState} from 'react'
-import {AppContext} from './context/AppContext'
-import {AppContextProps, SortOption} from './types/AppContextTypes'
+import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
+import { useState } from "react";
+import { AppContext } from "./context/AppContext";
+import { AppContextProps, SortOption } from "./types/AppContextTypes";
 
 const theme = {
   global: {
     font: {
-      family: 'Roboto',
-      size: '18px',
-      height: '20px',
+      family: "Roboto",
+      size: "18px",
+      height: "20px",
     },
   },
-}
+};
 
-const client = new QueryClient()
+const client = new QueryClient();
 
 function App() {
   const [context, setContext] = useState<AppContextProps>({
-    githubLogin: '',
+    githubLogin: "",
     submitted: false,
     sort: SortOption.LoginDESC,
-    usersPerPage: '9',
+    usersPerPage: "9",
     usersPerPageChanged: false,
     page: 1,
-  })
+  });
 
   return (
     <QueryClientProvider client={client}>
       <Grommet theme={theme}>
         <Box responsive align="center" justify="around">
-          <Header />
           <AppContext.Provider value={[context, setContext]}>
+            <Header />
             <h1>Aircraft Airlane</h1>
           </AppContext.Provider>
         </Box>
       </Grommet>
       <ReactQueryDevtools initialIsOpen />
     </QueryClientProvider>
-  )
+  );
 }
 
-export default App
+export default App;

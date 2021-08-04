@@ -2,28 +2,19 @@ import axios, { AxiosError } from "axios";
 import { useQuery } from "react-query";
 import { useAppContext } from "../context/AppContext";
 
-// https://infinite-dawn-93085.herokuapp.com/aircrafts
-// https://infinite-dawn-93085.herokuapp.com/aircrafts/GABCD
-
-export const useGetGithubUsersQuery = () => {
+export const useGetAircraftsQuery = () => {
   const [appContext, setAppContext] = useAppContext();
 
   const { data, isLoading, isSuccess, isError, error } = useQuery<
     any,
     AxiosError
   >(
-    [
-      "GithubUsers",
-      appContext.githubLogin,
-      appContext.page,
-      appContext.usersPerPage,
-    ],
+    ["Aircraft"],
     async (): Promise<any> =>
       await axios.get(
-        `https://api.github.com/search/users?q=${appContext.githubLogin}&page=${appContext.page}&per_page=${appContext.usersPerPage}`
+        "https://infinite-dawn-93085.herokuapp.com/aircrafts/GABCD"
       ),
     {
-      enabled: appContext.submitted || appContext.usersPerPageChanged,
       onError: (error: Error) => console.error(`Error '${error.message}'`),
       onSuccess: () =>
         setAppContext({
@@ -34,5 +25,5 @@ export const useGetGithubUsersQuery = () => {
     }
   );
 
-  return { response: data, isSuccess, isLoading, isError, error };
+  return { aircraft: data, isSuccess, isLoading, isError, error };
 };
