@@ -44,7 +44,7 @@ export const Aircraft: React.FC<Props> = () => {
         width="small"
         key={aircraft?.data.data.ident}
       >
-        <CardBody height="medium">
+        <CardBody height="small">
           <Image
             fit="cover"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6jsRElCg1kArT5CAVcH-yHruOJfUXNrdhg&usqp=CAU"
@@ -54,7 +54,7 @@ export const Aircraft: React.FC<Props> = () => {
         <CardHeader
           pad={{ horizontal: "small", vertical: "small" }}
           background="#000000A0"
-          width="medium"
+          width="small"
           justify="start"
         >
           <Box>

@@ -5,13 +5,15 @@ import { useGetFlightsQuery } from "../hooks/useGetFlightsQuery";
 import { Aircraft } from "./Aircraft";
 import { LoadingSpinner } from "./LoadingSpinner";
 import { ErrorMessage } from "./ErrorMessage";
+import { FlightCard } from "./FlightCard";
+import { SortRadioButtons } from "./SortRadioButtons";
 
 type Props = {};
 
 export const AircraftManage: React.FC<Props> = () => {
   const { flights, isSuccess, isLoading, isError, error } = useGetFlightsQuery(
     "1",
-    "10"
+    "25"
   );
 
   console.log(flights?.data);
@@ -31,16 +33,27 @@ export const AircraftManage: React.FC<Props> = () => {
           { name: "flights", start: [1, 0], end: [1, 0] },
           { name: "schedule", start: [2, 0], end: [2, 0] },
         ]}
-        columns={["medium", "flex", "medium"]}
+        columns={["small", "flex", "small"]}
         rows={["flex"]}
       >
-        <Box gridArea="aircraft">
+        <Box pad="small" gridArea="aircraft">
           <Aircraft />
         </Box>
-        <Box gridArea="flights">
-          {flights?.data.map((item) => (
-            <h1 key={item.id}>{item.destination}</h1>
-          ))}
+        <Box gridArea="flights" direction="column">
+          <Box>
+            <SortRadioButtons />
+          </Box>
+          <Box pad="small" fill>
+            <Grid
+              gap="small"
+              rows="small"
+              columns={{ count: "fill", size: ["small"] }}
+            >
+              {flights?.data.map((flight) => (
+                <FlightCard key={flight.id} flight={flight} />
+              ))}
+            </Grid>
+          </Box>
         </Box>
         <Box gridArea="schedule">
           <h1>Schedule</h1>

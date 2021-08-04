@@ -24,7 +24,7 @@ function App() {
   const [context, setContext] = useState<AppContextProps>({
     githubLogin: "",
     submitted: false,
-    sort: SortOption.LoginDESC,
+    sort: SortOption.DepartureASC,
     usersPerPage: "9",
     usersPerPageChanged: false,
     page: 1,
