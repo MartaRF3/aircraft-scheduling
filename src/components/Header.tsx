@@ -7,7 +7,7 @@ type Props = {};
 export const Header: React.FC<Props> = () => {
   return (
     <Heading responsive level={1} size="large">
-      Aircraft Rotation Management
+      Aircraft Scheduling
     </Heading>
   );
 };

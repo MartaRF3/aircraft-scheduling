@@ -91,3 +91,13 @@ created by npm run test.
 
 In this project it would be used axios as HTTP client for the browser and node.js.
 I worked before with react-query and axios, the combination of both is really straight foward.
+
+## Improvements
+
+### Rest API
+
+Allow request with departuretime, arrivaltime, origin, destination
+
+### Dropdown Calendar
+
+With bounded dates in the future, in order to help the user choosing a date
