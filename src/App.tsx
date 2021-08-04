@@ -1,26 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Box, Grommet} from 'grommet'
+import {Header} from './components/Header'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {QueryClient, QueryClientProvider} from 'react-query'
+import {ReactQueryDevtools} from 'react-query/devtools'
+import {useState} from 'react'
+import {AppContext} from './context/AppContext'
+import {AppContextProps, SortOption} from './types/AppContextTypes'
+
+const theme = {
+  global: {
+    font: {
+      family: 'Roboto',
+      size: '18px',
+      height: '20px',
+    },
+  },
 }
 
-export default App;
+const client = new QueryClient()
+
+function App() {
+  const [context, setContext] = useState<AppContextProps>({
+    githubLogin: '',
+    submitted: false,
+    sort: SortOption.LoginDESC,
+    usersPerPage: '9',
+    usersPerPageChanged: false,
+    page: 1,
+  })
+
+  return (
+    <QueryClientProvider client={client}>
+      <Grommet theme={theme}>
+        <Box responsive align="center" justify="around">
+          <Header />
+          <AppContext.Provider value={[context, setContext]}>
+            <h1>Aircraft Airlane</h1>
+          </AppContext.Provider>
+        </Box>
+      </Grommet>
+      <ReactQueryDevtools initialIsOpen />
+    </QueryClientProvider>
+  )
+}
+
+export default App
