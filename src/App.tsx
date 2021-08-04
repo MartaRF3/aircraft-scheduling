@@ -6,6 +6,7 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { useState } from "react";
 import { AppContext } from "./context/AppContext";
 import { AppContextProps, SortOption } from "./types/AppContextTypes";
+import { AircraftManage } from "./components/AircraftManage";
 
 const theme = {
   global: {
@@ -35,7 +36,7 @@ function App() {
         <Box responsive align="center" justify="around">
           <AppContext.Provider value={[context, setContext]}>
             <Header />
-            <h1>Aircraft Airlane</h1>
+            <AircraftManage />
           </AppContext.Provider>
         </Box>
       </Grommet>

@@ -4,8 +4,7 @@ This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
 
 The main goal of this project is to provide our COO with a friendly GUI, in
-order to manage the daily rotation of our aircraft airlane and to complete the AlphaSights Front-End
-Assesment.
+order to manage the daily rotation of our aircraft airlane.
 
 ## Available Scripts
 
