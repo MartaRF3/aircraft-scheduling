@@ -10,8 +10,9 @@ export const SortRadioButtons: React.FC<Props> = () => {
   const [appContext, setAppContext] = useAppContext();
 
   return (
-    <Box align="center" margin="medium">
+    <Box responsive align="center" margin="medium">
       <RadioButtonGroup
+        responsive
         name="radio"
         direction="row"
         gap="small"

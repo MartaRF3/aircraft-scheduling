@@ -11,6 +11,7 @@ type Props = {
 export const FlightCard: React.FC<Props> = ({ flight }) => {
   return (
     <Card
+      style={{ borderRadius: "0px" }}
       hoverIndicator={{
         background: {
           color: "background-contrast",
