@@ -14,13 +14,14 @@ export const FlightCard: React.FC<Props> = ({ flight }) => {
 
   return (
     <Card
-      style={{ borderRadius: "0px" }}
+      style={{ borderRadius: "0px", marginLeft: "0.5rem" }}
       hoverIndicator={{
         background: {
           color: "background-contrast",
         },
         elevation: "medium",
       }}
+      background={"#ffffff"}
       onClick={() => {
         setAppContext({
           ...appContext,

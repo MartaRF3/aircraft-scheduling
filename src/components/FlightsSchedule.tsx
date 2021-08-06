@@ -21,13 +21,10 @@ export const FlightsSchedule: React.FC<Props> = () => {
   };
 
   return (
-    <Box border align="center" margin="small">
-      <Heading responsive level={3}>
-        Schedule
-      </Heading>
-      <Box pad="small" fill direction="column" gap="small">
+    <Box align="center" margin="small">
+      <Box background="#C1ECC0" pad="small" fill direction="column" gap="small">
         {sortFlightsSchedule().map((flight) => (
-          <FlightCard key={flight.id} flight={flight} />
+          <FlightCard key={flight.id.concat("sf")} flight={flight} />
         ))}
       </Box>
     </Box>
