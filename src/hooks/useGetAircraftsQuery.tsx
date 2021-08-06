@@ -15,6 +15,7 @@ export const useGetAircraftsQuery = () => {
         "https://infinite-dawn-93085.herokuapp.com/aircrafts/GABCD"
       ),
     {
+      cacheTime: Infinity,
       onError: (error: Error) => console.error(`Error '${error.message}'`),
       onSuccess: () =>
         setAppContext({

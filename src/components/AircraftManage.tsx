@@ -7,6 +7,7 @@ import { SortRadioButtons } from "./SortRadioButtons";
 import { useAppContext } from "../context/AppContext";
 import { Flights } from "./Flights";
 import { AircraftMainInfo } from "./AircraftMainInfo";
+import { FlightsSchedule } from "./FlightsSchedule";
 
 type Props = {};
 
@@ -26,7 +27,7 @@ export const AircraftManage: React.FC<Props> = () => {
         { name: "flights", start: [0, 1], end: [0, 1] },
         { name: "schedule", start: [1, 1], end: [1, 1] },
       ]}
-      columns={["flex", "small"]}
+      columns={["flex", "15%"]}
       rows={["small", "flex"]}
     >
       <Box
@@ -72,7 +73,7 @@ export const AircraftManage: React.FC<Props> = () => {
             )}
           </Box>
           <Box gridArea="schedule">
-            <h1>Schedule</h1>
+            <FlightsSchedule />
           </Box>
         </>
       )}

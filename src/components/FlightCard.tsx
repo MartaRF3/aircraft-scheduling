@@ -3,12 +3,15 @@ import React from "react";
 import { Card, Heading, CardBody, CardHeader, Box, Text } from "grommet";
 
 import { Flight } from "../types/FlightTypes";
+import { useAppContext } from "../context/AppContext";
 
 type Props = {
   flight: Flight;
 };
 
 export const FlightCard: React.FC<Props> = ({ flight }) => {
+  const [appContext, setAppContext] = useAppContext();
+
   return (
     <Card
       style={{ borderRadius: "0px" }}
@@ -19,7 +22,11 @@ export const FlightCard: React.FC<Props> = ({ flight }) => {
         elevation: "medium",
       }}
       onClick={() => {
-        alert("clicked");
+        setAppContext({
+          ...appContext,
+          selectedFlights: [...appContext.selectedFlights, flight],
+        });
+        console.log(appContext);
       }}
       width="small"
     >

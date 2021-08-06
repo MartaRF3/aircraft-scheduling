@@ -22,6 +22,7 @@ export const useGetFlightsQuery = () => {
         ).toString()}&limit=${appContext.flightsPerPage}`
       ),
     {
+      cacheTime: Infinity,
       onError: (error: Error) => console.error(`Error '${error.message}'`),
       onSuccess: () =>
         setAppContext({

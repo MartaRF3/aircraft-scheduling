@@ -25,6 +25,7 @@ function App() {
     sort: SortOption.DepartureASC,
     flightsPerPage: "25",
     page: 1,
+    selectedFlights: [],
   });
 
   return (

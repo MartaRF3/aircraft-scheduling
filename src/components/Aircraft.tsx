@@ -25,8 +25,6 @@ export const Aircraft: React.FC<Props> = () => {
     error,
   } = useGetAircraftsQuery();
 
-  console.log(aircraft);
-
   if (isLoading) return <LoadingSpinner />;
 
   if (isSuccess) {
