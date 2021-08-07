@@ -26,8 +26,6 @@ export const useGetAircraftsQuery = () => {
   );
 
   const aircraft: Aircraft = data?.data.data;
-  aircraft.percent = 0;
-  console.log("data", data);
-  console.log("aircraft", aircraft);
+
   return { aircraft, isSuccess, isLoading, isError, error };
 };

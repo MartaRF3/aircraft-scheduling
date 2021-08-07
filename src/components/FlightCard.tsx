@@ -11,6 +11,22 @@ type Props = {
 
 export const FlightCard: React.FC<Props> = ({ flight }) => {
   const [appContext, setAppContext] = useAppContext();
+  const { selectedFlights } = appContext;
+
+  const updateUsagePercentage = (newSelectedFlights: Flight[]): number => {
+    const totalMinutesInADay = 86400;
+    const timePerFlight = newSelectedFlights.map((flight) => {
+      return flight.arrivaltime - flight.departuretime;
+    });
+    const totalTimeScheduled = timePerFlight.reduce(
+      (timeA, timeB) => timeA + timeB,
+      0
+    );
+    const newUsagePercentage = Number(
+      ((totalTimeScheduled / totalMinutesInADay) * 100).toFixed(2)
+    );
+    return newUsagePercentage;
+  };
 
   const handleOnClick = () => {
     let newSelectedFlights: Flight[] = [];
@@ -20,17 +36,18 @@ export const FlightCard: React.FC<Props> = ({ flight }) => {
         (flightItem) => flightItem.id === flight.id
       )
     ) {
-      newSelectedFlights = appContext.selectedFlights.filter(
+      newSelectedFlights = selectedFlights.filter(
         (flightItem) => flightItem.id !== flight.id
       );
     } else {
-      newSelectedFlights = [...appContext.selectedFlights, flight];
+      newSelectedFlights = [...selectedFlights, flight];
     }
+
     setAppContext({
       ...appContext,
       selectedFlights: newSelectedFlights,
+      usagePercentage: updateUsagePercentage(newSelectedFlights),
     });
-    console.log(appContext);
   };
   return (
     <Card

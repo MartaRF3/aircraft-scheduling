@@ -13,6 +13,7 @@ import {
 import { useGetAircraftsQuery } from "../hooks/useGetAircraftsQuery";
 import { ErrorMessage } from "./ErrorMessage";
 import { LoadingSpinner } from "./LoadingSpinner";
+import { useAppContext } from "../context/AppContext";
 
 type Props = {};
 
@@ -24,11 +25,13 @@ export const Aircraft: React.FC<Props> = () => {
     isError,
     error,
   } = useGetAircraftsQuery();
+  const [appContext] = useAppContext();
+  const { usagePercentage } = appContext;
 
   if (isLoading) return <LoadingSpinner />;
 
   if (isSuccess) {
-    console.log("in component", aircraft);
+    aircraft.percent = usagePercentage;
     return (
       <Card style={{ borderRadius: "0px" }} width="medium" key={aircraft.ident}>
         <CardBody height="medium">

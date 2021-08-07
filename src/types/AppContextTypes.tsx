@@ -16,4 +16,5 @@ export type AppContextProps = {
   flightsPerPage: string;
   page: number;
   selectedFlights: Flight[];
+  usagePercentage: number;
 };

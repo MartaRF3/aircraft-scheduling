@@ -26,6 +26,7 @@ function App() {
     flightsPerPage: "25",
     page: 1,
     selectedFlights: [],
+    usagePercentage: 0,
   });
 
   return (
