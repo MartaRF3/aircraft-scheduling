@@ -36,12 +36,10 @@ export const AircraftManage: React.FC<Props> = () => {
         gridArea="aircraft"
         direction="row-responsive"
         hoverIndicator={{
-          background: {
-            color: "background-contrast",
-          },
-          elevation: "medium",
+          elevation: "large",
         }}
-        border={{ size: "medium", style: "solid", side: "all" }}
+        background="#F5F5F5"
+        elevation="medium"
         onClick={() => {
           setAircraftSelected(!aircraftSelected);
         }}

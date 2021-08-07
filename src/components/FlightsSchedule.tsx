@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading } from "grommet";
+import { Box } from "grommet";
 import { FlightCard } from "./FlightCard";
 import { useAppContext } from "../context/AppContext";
 import { Flight } from "../types/FlightTypes";
@@ -9,6 +9,7 @@ type Props = {};
 export const FlightsSchedule: React.FC<Props> = () => {
   const [appContext] = useAppContext();
   const { selectedFlights } = appContext;
+  const areSelectedFlights = selectedFlights.length > 0;
 
   const sortFlightsSchedule = (): Flight[] => {
     let orderedList: Flight[] = [];
@@ -21,12 +22,22 @@ export const FlightsSchedule: React.FC<Props> = () => {
   };
 
   return (
-    <Box align="center" margin="small">
-      <Box background="#C1ECC0" pad="small" fill direction="column" gap="small">
-        {sortFlightsSchedule().map((flight) => (
-          <FlightCard key={flight.id.concat("sf")} flight={flight} />
-        ))}
-      </Box>
-    </Box>
+    <>
+      {areSelectedFlights && (
+        <Box align="center" margin="small">
+          <Box
+            background="#C1ECC0"
+            pad="small"
+            fill
+            direction="column"
+            gap="small"
+          >
+            {sortFlightsSchedule().map((flight) => (
+              <FlightCard key={flight.id.concat("sf")} flight={flight} />
+            ))}
+          </Box>
+        </Box>
+      )}
+    </>
   );
 };

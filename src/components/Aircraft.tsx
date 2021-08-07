@@ -28,12 +28,9 @@ export const Aircraft: React.FC<Props> = () => {
   if (isLoading) return <LoadingSpinner />;
 
   if (isSuccess) {
+    console.log("in component", aircraft);
     return (
-      <Card
-        style={{ borderRadius: "0px" }}
-        width="medium"
-        key={aircraft?.data.data.ident}
-      >
+      <Card style={{ borderRadius: "0px" }} width="medium" key={aircraft.ident}>
         <CardBody height="medium">
           <Image
             fit="cover"
@@ -49,16 +46,16 @@ export const Aircraft: React.FC<Props> = () => {
         >
           <Box>
             <Heading truncate level="3" margin="none">
-              {aircraft?.data.data.ident}
+              {aircraft.ident}
             </Heading>
             <Text truncate size="medium">
-              {aircraft?.data.data.type}
+              {aircraft.type}
             </Text>
           </Box>
         </CardHeader>
         <CardFooter justify="center">
           <Heading truncate level="3" margin="none">
-            53%
+            {aircraft.percent}%
           </Heading>
         </CardFooter>
       </Card>

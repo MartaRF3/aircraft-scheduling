@@ -12,23 +12,37 @@ type Props = {
 export const FlightCard: React.FC<Props> = ({ flight }) => {
   const [appContext, setAppContext] = useAppContext();
 
+  const handleOnClick = () => {
+    let newSelectedFlights: Flight[] = [];
+
+    if (
+      appContext.selectedFlights.find(
+        (flightItem) => flightItem.id === flight.id
+      )
+    ) {
+      newSelectedFlights = appContext.selectedFlights.filter(
+        (flightItem) => flightItem.id !== flight.id
+      );
+    } else {
+      newSelectedFlights = [...appContext.selectedFlights, flight];
+    }
+    setAppContext({
+      ...appContext,
+      selectedFlights: newSelectedFlights,
+    });
+    console.log(appContext);
+  };
   return (
     <Card
       style={{ borderRadius: "0px", marginLeft: "0.5rem" }}
       hoverIndicator={{
         background: {
-          color: "background-contrast",
+          color: "#F5F5F5",
         },
         elevation: "medium",
       }}
       background={"#ffffff"}
-      onClick={() => {
-        setAppContext({
-          ...appContext,
-          selectedFlights: [...appContext.selectedFlights, flight],
-        });
-        console.log(appContext);
-      }}
+      onClick={handleOnClick}
       width="small"
     >
       <CardBody margin="small" height="small">
