@@ -1,7 +1,7 @@
 import axios, { AxiosError } from "axios";
 import { useQuery } from "react-query";
 import { useAppContext } from "../context/AppContext";
-import { Aircraft } from "../types/AircraftTypes";
+import { IAircraft } from "../types/AircraftTypes";
 
 export const useGetAircraftsQuery = () => {
   const [appContext, setAppContext] = useAppContext();
@@ -25,7 +25,7 @@ export const useGetAircraftsQuery = () => {
     }
   );
 
-  const aircraft: Aircraft = data?.data.data;
+  const aircraft: IAircraft = data?.data.data;
 
   return { aircraft, isSuccess, isLoading, isError, error };
 };

@@ -1,7 +1,7 @@
 import axios, { AxiosError } from "axios";
 import { useQuery } from "react-query";
 import { useAppContext } from "../context/AppContext";
-import { Flights } from "../types/FlightTypes";
+import { IFlights } from "../types/FlightTypes";
 
 // https://infinite-dawn-93085.herokuapp.com/flights?offset=1&limit=10(max 25)
 // https://infinite-dawn-93085.herokuapp.com/flights/AS1234
@@ -31,7 +31,7 @@ export const useGetFlightsQuery = () => {
     }
   );
 
-  const flights: Flights = data?.data;
+  const flights: IFlights = data?.data;
 
   return { flights, isSuccess, isLoading, isError, error };
 };

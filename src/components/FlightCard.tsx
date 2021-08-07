@@ -2,19 +2,29 @@ import React from "react";
 
 import { Card, Heading, CardBody, CardHeader, Box, Text } from "grommet";
 
-import { Flight } from "../types/FlightTypes";
+import { IFlight } from "../types/FlightTypes";
 import { useAppContext } from "../context/AppContext";
+import { totalMinutesInADay } from "../const/constants";
 
 type Props = {
-  flight: Flight;
+  flight: IFlight;
 };
 
 export const FlightCard: React.FC<Props> = ({ flight }) => {
   const [appContext, setAppContext] = useAppContext();
   const { selectedFlights } = appContext;
 
-  const updateUsagePercentage = (newSelectedFlights: Flight[]): number => {
-    const totalMinutesInADay = 86400;
+  const sortFlightsSchedule = (newSelectedFlights: IFlight[]): IFlight[] => {
+    let orderedList: IFlight[] = [];
+
+    orderedList = newSelectedFlights.sort((a: IFlight, b: IFlight) =>
+      a.readable_departure.localeCompare(b.readable_departure)
+    );
+
+    return orderedList;
+  };
+
+  const updateUsagePercentage = (newSelectedFlights: IFlight[]): number => {
     const timePerFlight = newSelectedFlights.map((flight) => {
       return flight.arrivaltime - flight.departuretime;
     });
@@ -29,15 +39,15 @@ export const FlightCard: React.FC<Props> = ({ flight }) => {
   };
 
   const handleOnClick = () => {
-    let newSelectedFlights: Flight[] = [];
+    let newSelectedFlights: IFlight[] = [];
 
     if (
       appContext.selectedFlights.find(
-        (flightItem) => flightItem.id === flight.id
+        (flightItem: IFlight) => flightItem.id === flight.id
       )
     ) {
       newSelectedFlights = selectedFlights.filter(
-        (flightItem) => flightItem.id !== flight.id
+        (flightItem: IFlight) => flightItem.id !== flight.id
       );
     } else {
       newSelectedFlights = [...selectedFlights, flight];
@@ -45,7 +55,7 @@ export const FlightCard: React.FC<Props> = ({ flight }) => {
 
     setAppContext({
       ...appContext,
-      selectedFlights: newSelectedFlights,
+      selectedFlights: sortFlightsSchedule(newSelectedFlights),
       usagePercentage: updateUsagePercentage(newSelectedFlights),
     });
   };

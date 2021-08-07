@@ -1,4 +1,4 @@
-import { Flight } from "./FlightTypes";
+import { IFlight } from "./FlightTypes";
 
 export enum SortOption {
   DestinationASC = "DestinationASC",
@@ -11,10 +11,10 @@ export enum SortOption {
   ArrivalDESC = "ArrivalDESC",
 }
 
-export type AppContextProps = {
+export type IAppContextProps = {
   sort: SortOption;
   flightsPerPage: string;
   page: number;
-  selectedFlights: Flight[];
+  selectedFlights: IFlight[];
   usagePercentage: number;
 };

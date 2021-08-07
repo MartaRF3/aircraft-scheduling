@@ -1,4 +1,4 @@
-export interface Aircraft {
+export interface IAircraft {
   ident: string;
   type: string;
   economySeats: number;

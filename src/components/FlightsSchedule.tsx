@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "grommet";
 import { FlightCard } from "./FlightCard";
 import { useAppContext } from "../context/AppContext";
-import { Flight } from "../types/FlightTypes";
+import { IFlight } from "../types/FlightTypes";
 
 type Props = {};
 
@@ -10,16 +10,6 @@ export const FlightsSchedule: React.FC<Props> = () => {
   const [appContext] = useAppContext();
   const { selectedFlights } = appContext;
   const areSelectedFlights = selectedFlights.length > 0;
-
-  const sortFlightsSchedule = (): Flight[] => {
-    let orderedList: Flight[] = [];
-
-    orderedList = selectedFlights.sort((a: Flight, b: Flight) =>
-      a.readable_departure.localeCompare(b.readable_departure)
-    );
-
-    return orderedList;
-  };
 
   return (
     <>
@@ -32,7 +22,7 @@ export const FlightsSchedule: React.FC<Props> = () => {
             direction="column"
             gap="small"
           >
-            {sortFlightsSchedule().map((flight) => (
+            {selectedFlights.map((flight: IFlight) => (
               <FlightCard key={flight.id.concat("sf")} flight={flight} />
             ))}
           </Box>

@@ -1,10 +1,10 @@
-export interface Pagination {
+export interface IPagination {
   offset: number;
   limit: number;
   total: number;
 }
 
-export interface Flight {
+export interface IFlight {
   id: string;
   departuretime: number;
   arrivaltime: number;
@@ -14,7 +14,7 @@ export interface Flight {
   destination: string;
 }
 
-export interface Flights {
-  pagination: Pagination;
-  data: Flight[];
+export interface IFlights {
+  pagination: IPagination;
+  data: IFlight[];
 }

@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { useState } from "react";
 import { AppContext } from "./context/AppContext";
-import { AppContextProps, SortOption } from "./types/AppContextTypes";
+import { IAppContextProps, SortOption } from "./types/AppContextTypes";
 import { AircraftManage } from "./components/AircraftManage";
 
 const theme = {
@@ -21,7 +21,7 @@ const theme = {
 const client = new QueryClient();
 
 function App() {
-  const [context, setContext] = useState<AppContextProps>({
+  const [context, setContext] = useState<IAppContextProps>({
     sort: SortOption.DepartureASC,
     flightsPerPage: "25",
     page: 1,
