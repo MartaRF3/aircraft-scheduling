@@ -17,4 +17,5 @@ export type IAppContextProps = {
   page: number;
   selectedFlights: IFlight[];
   usagePercentage: number;
+  availableFlights: IFlight[];
 };

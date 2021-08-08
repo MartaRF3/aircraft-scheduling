@@ -7,6 +7,7 @@ import { FlightCard } from "./FlightCard";
 import { useAppContext } from "../context/AppContext";
 import { SortOption } from "../types/AppContextTypes";
 import { IFlight } from "../types/FlightTypes";
+import { turnaroundTime } from "../const/constants";
 
 type Props = {};
 
@@ -20,7 +21,123 @@ export const Flights: React.FC<Props> = () => {
   } = useGetFlightsQuery();
 
   const [appContext] = useAppContext();
-  const { sort } = appContext;
+  const { sort, selectedFlights } = appContext;
+
+  const flightCanBeBefore = (
+    flight: IFlight,
+    selectedFlight: IFlight
+  ): boolean => {
+    if (flight.arrivaltime + turnaroundTime <= selectedFlight.departuretime) {
+      if (flight.destination === selectedFlight.origin) {
+        return true;
+      }
+    }
+
+    return false;
+  };
+
+  const flightCanBeAfter = (
+    flight: IFlight,
+    selectedFlight: IFlight
+  ): boolean => {
+    if (flight.departuretime - turnaroundTime >= selectedFlight.departuretime) {
+      if (flight.origin === selectedFlight.destination) {
+        return true;
+      }
+    }
+
+    return false;
+  };
+
+  const flightCanBeBetweenFlights = (
+    flight: IFlight,
+    selectedFlightBefore: IFlight,
+    selectedFlightAfter: IFlight
+  ): boolean => {
+    const timeBetweenSelectedFlights =
+      selectedFlightAfter.departuretime -
+      selectedFlightBefore.arrivaltime -
+      2 * turnaroundTime;
+    const flightDuration = flight.arrivaltime - flight.departuretime;
+
+    if (flightDuration <= timeBetweenSelectedFlights) {
+      if (selectedFlightBefore.destination === flight.origin) {
+        if (selectedFlightAfter.origin === flight.destination) {
+          return true;
+        }
+      }
+    }
+    return false;
+  };
+
+  const setFlightsAvailability = (flights: IFlight[]): IFlight[] => {
+    switch (selectedFlights.length) {
+      case 0: {
+        return flights.map((flight) => {
+          return { ...flight, avalableForScheduling: true };
+        });
+      }
+      case 1: {
+        return flights.map((flight) => {
+          if (
+            selectedFlights.filter(
+              (selectedFlight) => selectedFlight.id === flight.id
+            ).length === 1
+          ) {
+            return { ...flight, avalableForScheduling: false };
+          }
+          if (
+            flightCanBeBefore(flight, selectedFlights[0]) ||
+            flightCanBeAfter(flight, selectedFlights[0])
+          ) {
+            return { ...flight, avalableForScheduling: true };
+          }
+          return { ...flight, avalableForScheduling: false };
+        });
+      }
+      default: {
+        return flights.map((flight) => {
+          if (
+            selectedFlights.filter(
+              (selectedFlight) => selectedFlight.id === flight.id
+            ).length === 1
+          ) {
+            return { ...flight, avalableForScheduling: false };
+          }
+          if (
+            flightCanBeBefore(flight, selectedFlights[0]) ||
+            flightCanBeAfter(
+              flight,
+              selectedFlights[selectedFlights.length - 1]
+            )
+          ) {
+            return { ...flight, avalableForScheduling: true };
+          }
+          const flightInBetween = selectedFlights
+            .map((selectedFlight, i, selectedFlights) => {
+              if (i < selectedFlights.length - 1) {
+                if (
+                  flightCanBeBetweenFlights(
+                    flight,
+                    selectedFlight,
+                    selectedFlights[i + 1]
+                  )
+                ) {
+                  return true;
+                }
+              }
+              return false;
+            })
+            .filter((item) => item === true).length;
+
+          return {
+            ...flight,
+            avalableForScheduling: flightInBetween === 1 ? true : false,
+          };
+        });
+      }
+    }
+  };
 
   const sortFlights = (): IFlight[] => {
     let orderedList: IFlight[] = [];
@@ -92,9 +209,9 @@ export const Flights: React.FC<Props> = () => {
           rows="small"
           columns={{ count: "fill", size: ["small"] }}
         >
-          {sortFlights().map((flight) => (
-            <FlightCard key={flight.id} flight={flight} />
-          ))}
+          {setFlightsAvailability(sortFlights()).map((flight) => {
+            return <FlightCard key={flight.id} flight={flight} />;
+          })}
         </Grid>
       </Box>
     );

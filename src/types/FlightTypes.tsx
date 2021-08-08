@@ -12,6 +12,7 @@ export interface IFlight {
   readable_arrival: string;
   origin: string;
   destination: string;
+  avalableForScheduling: boolean;
 }
 
 export interface IFlights {

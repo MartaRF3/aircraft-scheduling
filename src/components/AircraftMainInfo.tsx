@@ -15,12 +15,16 @@ export const AircraftMainInfo: React.FC<Props> = () => {
     const timePerFlight = selectedFlights.map((flight: IFlight) => {
       return flight.arrivaltime - flight.departuretime;
     });
-
-    console.log("timePerFligt", timePerFlight);
-
-    // value -> arrivaltime- departuretime
-    // after selected flight include purple 20min
+    timePerFlight.map((i) => {
+      return 1;
+    });
     // per defaul meter has to be all grey
+    // delete value from grey to departuretime
+    // add value from flight green
+    // after selected flight include purple 20min
+    // calculate which grey value has to be added
+    // value -> arrivaltime- departuretime
+
     return [
       { value: 50000, color: "#de81ee" },
       { value: 4000, color: "#B8B8B8" },
