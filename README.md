@@ -6,6 +6,12 @@ This project was bootstrapped with
 The main goal of this project is to provide our COO with a friendly GUI, in
 order to manage the daily rotation of our aircraft airlane.
 
+- The GUI is designed so that our COO has a global view of our aircrafts, and once she clicks on one of them she can enter the scheduling mode of the selected aircraft by clicking on the available flights.
+- The app will help our COO providing the flights that are available depending on the actual schedule.
+- The timeline and percentage of usage of the aircraft will be updated, everytime there is a change on the schedule, always at the top of the page so that is easy accesible to the eyes of our COO.
+- The flights scheduled are shown on the right side of the screen, and can be erased from the schedule by clicking on them.
+- The flights are ordered by default by ascending departure time, but the COO is provided with arrival, destination and origin ascendent and descendent sorting.
+
 ## Available Scripts
 
 In the project directory, you can run:

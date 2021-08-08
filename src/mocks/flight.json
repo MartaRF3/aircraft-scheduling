@@ -1,0 +1,10 @@
+{
+  "arrivaltime": 32100,
+  "departuretime": 27900,
+  "destination": "LFSB",
+  "id": "AS1002",
+  "origin": "LFMN",
+  "readable_arrival": "08:55",
+  "readable_departure": "07:45",
+  "avalableForScheduling": true
+}

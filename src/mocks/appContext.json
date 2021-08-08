@@ -1,0 +1,8 @@
+{
+  "sort": "SortOption.DepartureASC",
+  "flightsPerPage": "21",
+  "page": 1,
+  "selectedFlights": [],
+  "usagePercentage": 0,
+  "availableFlights": []
+}

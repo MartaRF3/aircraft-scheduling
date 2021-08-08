@@ -26,6 +26,7 @@ export const AircraftMainInfo: React.FC<Props> = () => {
       selectedFlights.map((flight: IFlight, i, selectedFlights) => {
         if (flight.departuretime > midnite && i === 0) {
           values.push({ value: flight.departuretime, color: iddleTimeColor });
+          values.push({ value: turnaroundTime, color: turnaroundTimeColor });
         } else {
           if (
             selectedFlights[i - 1].arrivaltime + turnaroundTime !==
