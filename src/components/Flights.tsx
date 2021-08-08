@@ -40,7 +40,7 @@ export const Flights: React.FC<Props> = () => {
     flight: IFlight,
     selectedFlight: IFlight
   ): boolean => {
-    if (flight.departuretime - turnaroundTime >= selectedFlight.departuretime) {
+    if (flight.departuretime - turnaroundTime >= selectedFlight.arrivaltime) {
       if (flight.origin === selectedFlight.destination) {
         return true;
       }
