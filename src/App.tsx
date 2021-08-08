@@ -23,7 +23,7 @@ const client = new QueryClient();
 function App() {
   const [context, setContext] = useState<IAppContextProps>({
     sort: SortOption.DepartureASC,
-    flightsPerPage: "10",
+    flightsPerPage: "21",
     page: 1,
     selectedFlights: [],
     usagePercentage: 0,
