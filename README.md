@@ -68,7 +68,7 @@ customize it when you are ready for it.
 This WebApp uses React-Query for managing the data-fetching functionality.
 https://react-query.tanstack.com/overview
 
-As a performance add-on will save all queries introduced in the Search field and
+As a performance add-on will save all queries of the pagination,
 will load them without making a new call. This performance can be followed in
 the ReactQueryDevtools Section Displayed in the Browser as the WebApp is loaded.
 
@@ -102,8 +102,16 @@ I worked before with react-query and axios, the combination of both is really st
 
 ### Rest API
 
-Allow request with departuretime, arrivaltime, origin, destination
+In order to build a more user oriented GUI, we could allow request with departuretime, arrivaltime, origin, destination. In this way we could really obtain the true available flights depending on the selection, so that the user has direct access to this data, and does not have to go through the paginantion.
 
 ### Dropdown Calendar
 
-With bounded dates in the future, in order to help the user choosing a date
+If the date is to be changed, it could be offered a calender with bounded dates in the future, in order to help the user choosing a date.
+
+### More aircrafts
+
+If the number of aircrafts increases, the app will show the list of the aircrafts first, and only on click will open the collapsable with the flights availability, in order for the COO to be focused on one aircraft scheduling.
+
+### SessionStorage
+
+We could store the selection for the aircraft in sessionstorage to avoid losing changes when refreshing.
