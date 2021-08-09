@@ -31,7 +31,6 @@ export const Aircraft: React.FC<Props> = () => {
   if (isLoading) return <LoadingSpinner />;
 
   if (isSuccess) {
-    aircraft.percent = usagePercentage;
     return (
       <Card style={{ borderRadius: "0px" }} width="medium" key={aircraft.ident}>
         <CardBody height="medium">
@@ -58,7 +57,7 @@ export const Aircraft: React.FC<Props> = () => {
         </CardHeader>
         <CardFooter justify="center">
           <Heading truncate level="3" margin="none">
-            {aircraft.percent}%
+            {usagePercentage}%
           </Heading>
         </CardFooter>
       </Card>

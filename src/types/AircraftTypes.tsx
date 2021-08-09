@@ -3,5 +3,4 @@ export interface IAircraft {
   type: string;
   economySeats: number;
   base: string;
-  percent: number;
 }

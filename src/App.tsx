@@ -27,7 +27,6 @@ function App() {
     page: 1,
     selectedFlights: [],
     usagePercentage: 0,
-    availableFlights: [],
   });
 
   return (

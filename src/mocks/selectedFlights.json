@@ -1,0 +1,32 @@
+[
+  {
+    "id": "AS1025",
+    "departuretime": 22800,
+    "arrivaltime": 28200,
+    "readable_departure": "06:20",
+    "readable_arrival": "07:50",
+    "origin": "LFSB",
+    "destination": "EDDH",
+    "avalableForScheduling": true
+  },
+  {
+    "id": "AS1026",
+    "departuretime": 30000,
+    "arrivaltime": 35100,
+    "readable_departure": "08:20",
+    "readable_arrival": "09:45",
+    "origin": "EDDH",
+    "destination": "LFSB",
+    "avalableForScheduling": true
+  },
+  {
+    "id": "AS1081",
+    "departuretime": 49800,
+    "arrivaltime": 55800,
+    "readable_departure": "13:50",
+    "readable_arrival": "15:30",
+    "origin": "LFSB",
+    "destination": "LEBL",
+    "avalableForScheduling": true
+  }
+]

@@ -3,8 +3,6 @@ import { useQuery } from "react-query";
 import { useAppContext } from "../context/AppContext";
 import { IFlights } from "../types/FlightTypes";
 
-// https://infinite-dawn-93085.herokuapp.com/flights?offset=1&limit=10(max 25)
-// https://infinite-dawn-93085.herokuapp.com/flights/AS1234
 export const useGetFlightsQuery = () => {
   const [appContext, setAppContext] = useAppContext();
 
@@ -22,6 +20,7 @@ export const useGetFlightsQuery = () => {
         ).toString()}&limit=${appContext.flightsPerPage}`
       ),
     {
+      refetchOnWindowFocus: false,
       cacheTime: Infinity,
       onError: (error: Error) => console.error(`Error '${error.message}'`),
       onSuccess: () =>

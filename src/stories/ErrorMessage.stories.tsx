@@ -9,7 +9,17 @@ export default {
 } as Meta;
 
 const Template: Story = () => {
-  return <ErrorMessage error={"error"} />;
+  return (
+    <ErrorMessage
+      error={{
+        response: {
+          data: {
+            data: { message: "Server not working" },
+          },
+        },
+      }}
+    />
+  );
 };
 
 /**
