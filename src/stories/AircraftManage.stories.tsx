@@ -53,8 +53,5 @@ AircraftManageResultsWithMockData.parameters = {
     rest.get(apiGateway.concat("offset=0&limit=21"), (req, res, ctx) => {
       return res(ctx.json(flights0));
     }),
-    rest.get(apiGateway.concat("offset=1&limit=21"), (req, res, ctx) => {
-      return res(ctx.json(flights1));
-    }),
   ],
 };

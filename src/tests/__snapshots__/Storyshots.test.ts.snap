@@ -1,0 +1,1190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots AircraftMainInfo Aircraft Main Info Default 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+>
+  <div
+    className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 iPaCRT"
+      style={
+        Object {
+          "flexBasis": "70%",
+        }
+      }
+    >
+      <h3
+        className="StyledHeading-sc-1rdh4aw-0 gMQwwh"
+      >
+        Tue Aug 10 2021
+      </h3>
+      <div
+        className="StyledStack-ajspsk-0 gVdmEl"
+      >
+        <div
+          className="StyledStack__StyledStackLayer-ajspsk-1 hgDudY"
+        >
+          <div
+            className="StyledStack-ajspsk-0 gVdmEl"
+          >
+            <div
+              className="StyledStack__StyledStackLayer-ajspsk-1 hgDudY"
+            >
+              <div
+                className="StyledStack-ajspsk-0 gVdmEl"
+              >
+                <div
+                  className="StyledStack__StyledStackLayer-ajspsk-1 hgDudY"
+                >
+                  <div
+                    className="StyledBox-sc-13pk1d4-0 kUTqHn"
+                    style={
+                      Object {
+                        "paddingTop": "1.5rem",
+                      }
+                    }
+                  >
+                    <svg
+                      className="StyledMeter-nsxarx-0 jdwgAP"
+                      height={48}
+                      preserveAspectRatio="none"
+                      viewBox="0 0 1536 48"
+                      width={1536}
+                    >
+                      <path
+                        d="M 0,24 L 1536,24"
+                        fill="none"
+                        stroke="#F2F2F2"
+                        strokeLinecap="square"
+                        strokeOpacity="0.4"
+                        strokeWidth={48}
+                      />
+                      <path
+                        d="M 1120,24 L 1685.3333333333335,24"
+                        fill="none"
+                        stroke="#B8B8B8"
+                        strokeLinecap="butt"
+                        strokeWidth={48}
+                      />
+                      <path
+                        d="M 1098.6666666666667,24 L 1120,24"
+                        fill="none"
+                        stroke="#de81ee"
+                        strokeLinecap="butt"
+                        strokeWidth={48}
+                      />
+                      <path
+                        d="M 992,24 L 1098.6666666666667,24"
+                        fill="none"
+                        stroke="#C1ECC0"
+                        strokeLinecap="butt"
+                        strokeWidth={48}
+                      />
+                      <path
+                        d="M 709.3333333333334,24 L 992,24"
+                        fill="none"
+                        stroke="#B8B8B8"
+                        strokeLinecap="butt"
+                        strokeWidth={48}
+                      />
+                      <path
+                        d="M 688,24 L 709.3333333333334,24"
+                        fill="none"
+                        stroke="#de81ee"
+                        strokeLinecap="butt"
+                        strokeWidth={48}
+                      />
+                      <path
+                        d="M 597.3333333333334,24 L 688,24"
+                        fill="none"
+                        stroke="#C1ECC0"
+                        strokeLinecap="butt"
+                        strokeWidth={48}
+                      />
+                      <path
+                        d="M 544,24 L 597.3333333333334,24"
+                        fill="none"
+                        stroke="#B8B8B8"
+                        strokeLinecap="butt"
+                        strokeWidth={48}
+                      />
+                      <path
+                        d="M 522.6666666666666,24 L 544,24"
+                        fill="none"
+                        stroke="#de81ee"
+                        strokeLinecap="butt"
+                        strokeWidth={48}
+                      />
+                      <path
+                        d="M 426.66666666666663,24 L 522.6666666666666,24"
+                        fill="none"
+                        stroke="#C1ECC0"
+                        strokeLinecap="butt"
+                        strokeWidth={48}
+                      />
+                      <path
+                        d="M 405.3333333333333,24 L 426.66666666666663,24"
+                        fill="none"
+                        stroke="#de81ee"
+                        strokeLinecap="butt"
+                        strokeWidth={48}
+                      />
+                      <path
+                        d="M 0,24 L 405.3333333333333,24"
+                        fill="none"
+                        stroke="#B8B8B8"
+                        strokeLinecap="butt"
+                        strokeWidth={48}
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  className="StyledStack__StyledStackLayer-ajspsk-1 cazrLN"
+                >
+                  <div
+                    className="StyledBox-sc-13pk1d4-0 bGiIZy"
+                    style={
+                      Object {
+                        "marginBottom": "2rem",
+                      }
+                    }
+                  >
+                    12:00
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="StyledStack__StyledStackLayer-ajspsk-1 dheeJP"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 bGiIZy"
+                style={
+                  Object {
+                    "marginBottom": "2rem",
+                  }
+                }
+              >
+                23:59
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="StyledStack__StyledStackLayer-ajspsk-1 liOvBY"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 bGiIZy"
+            style={
+              Object {
+                "marginBottom": "2rem",
+              }
+            }
+          >
+            00:00
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots AircraftManage Aircraft Manage Results With Mock Data 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+>
+  <div
+    className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+  >
+    <div
+      className="StyledGrid-sc-1wofa1l-0 eDIdgF"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 iZwRLo"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 eujwNl"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 covhNw"
+          />
+        </div>
+        <div
+          className="StyledBox__StyledBoxGap-sc-13pk1d4-1 bQoSSJ"
+        />
+        <div
+          className="StyledBox-sc-13pk1d4-0 iPaCRT"
+          style={
+            Object {
+              "flexBasis": "70%",
+            }
+          }
+        >
+          <h3
+            className="StyledHeading-sc-1rdh4aw-0 gMQwwh"
+          >
+            Tue Aug 10 2021
+          </h3>
+          <div
+            className="StyledStack-ajspsk-0 gVdmEl"
+          >
+            <div
+              className="StyledStack__StyledStackLayer-ajspsk-1 hgDudY"
+            >
+              <div
+                className="StyledStack-ajspsk-0 gVdmEl"
+              >
+                <div
+                  className="StyledStack__StyledStackLayer-ajspsk-1 hgDudY"
+                >
+                  <div
+                    className="StyledStack-ajspsk-0 gVdmEl"
+                  >
+                    <div
+                      className="StyledStack__StyledStackLayer-ajspsk-1 hgDudY"
+                    >
+                      <div
+                        className="StyledBox-sc-13pk1d4-0 kUTqHn"
+                        style={
+                          Object {
+                            "paddingTop": "1.5rem",
+                          }
+                        }
+                      >
+                        <svg
+                          className="StyledMeter-nsxarx-0 jdwgAP"
+                          height={48}
+                          preserveAspectRatio="none"
+                          viewBox="0 0 1536 48"
+                          width={1536}
+                        >
+                          <path
+                            d="M 0,24 L 1536,24"
+                            fill="none"
+                            stroke="#F2F2F2"
+                            strokeLinecap="square"
+                            strokeOpacity="0.4"
+                            strokeWidth={48}
+                          />
+                          <path
+                            d="M 1120,24 L 1685.3333333333335,24"
+                            fill="none"
+                            stroke="#B8B8B8"
+                            strokeLinecap="butt"
+                            strokeWidth={48}
+                          />
+                          <path
+                            d="M 1098.6666666666667,24 L 1120,24"
+                            fill="none"
+                            stroke="#de81ee"
+                            strokeLinecap="butt"
+                            strokeWidth={48}
+                          />
+                          <path
+                            d="M 992,24 L 1098.6666666666667,24"
+                            fill="none"
+                            stroke="#C1ECC0"
+                            strokeLinecap="butt"
+                            strokeWidth={48}
+                          />
+                          <path
+                            d="M 709.3333333333334,24 L 992,24"
+                            fill="none"
+                            stroke="#B8B8B8"
+                            strokeLinecap="butt"
+                            strokeWidth={48}
+                          />
+                          <path
+                            d="M 688,24 L 709.3333333333334,24"
+                            fill="none"
+                            stroke="#de81ee"
+                            strokeLinecap="butt"
+                            strokeWidth={48}
+                          />
+                          <path
+                            d="M 597.3333333333334,24 L 688,24"
+                            fill="none"
+                            stroke="#C1ECC0"
+                            strokeLinecap="butt"
+                            strokeWidth={48}
+                          />
+                          <path
+                            d="M 544,24 L 597.3333333333334,24"
+                            fill="none"
+                            stroke="#B8B8B8"
+                            strokeLinecap="butt"
+                            strokeWidth={48}
+                          />
+                          <path
+                            d="M 522.6666666666666,24 L 544,24"
+                            fill="none"
+                            stroke="#de81ee"
+                            strokeLinecap="butt"
+                            strokeWidth={48}
+                          />
+                          <path
+                            d="M 426.66666666666663,24 L 522.6666666666666,24"
+                            fill="none"
+                            stroke="#C1ECC0"
+                            strokeLinecap="butt"
+                            strokeWidth={48}
+                          />
+                          <path
+                            d="M 405.3333333333333,24 L 426.66666666666663,24"
+                            fill="none"
+                            stroke="#de81ee"
+                            strokeLinecap="butt"
+                            strokeWidth={48}
+                          />
+                          <path
+                            d="M 0,24 L 405.3333333333333,24"
+                            fill="none"
+                            stroke="#B8B8B8"
+                            strokeLinecap="butt"
+                            strokeWidth={48}
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      className="StyledStack__StyledStackLayer-ajspsk-1 cazrLN"
+                    >
+                      <div
+                        className="StyledBox-sc-13pk1d4-0 bGiIZy"
+                        style={
+                          Object {
+                            "marginBottom": "2rem",
+                          }
+                        }
+                      >
+                        12:00
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="StyledStack__StyledStackLayer-ajspsk-1 dheeJP"
+                >
+                  <div
+                    className="StyledBox-sc-13pk1d4-0 bGiIZy"
+                    style={
+                      Object {
+                        "marginBottom": "2rem",
+                      }
+                    }
+                  >
+                    23:59
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="StyledStack__StyledStackLayer-ajspsk-1 liOvBY"
+            >
+              <div
+                className="StyledBox-sc-13pk1d4-0 bGiIZy"
+                style={
+                  Object {
+                    "marginBottom": "2rem",
+                  }
+                }
+              >
+                00:00
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ErrorMessage Error Message Default 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 kRivxf"
+  >
+    <p
+      className="StyledParagraph-tbetod-0 lnpRks"
+    >
+      An Error had occured, please load the page again.
+    </p>
+    <p
+      className="StyledParagraph-tbetod-0 lnpRks"
+    >
+      The Aircrafts API is responding: 
+      Server not working
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots FlightCard Flight Card Default 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+>
+  <div
+    className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 kmUNaf"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      style={
+        Object {
+          "borderRadius": "0px",
+          "marginLeft": "0.5rem",
+        }
+      }
+      tabIndex={0}
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 hvpBQs"
+      >
+        <h3
+          className="StyledHeading-sc-1rdh4aw-0 egvixI"
+          style={
+            Object {
+              "opacity": "1",
+            }
+          }
+        >
+          AS1002
+        </h3>
+      </div>
+      <header
+        className="StyledBox-sc-13pk1d4-0 hBuyNC"
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 loApRd"
+        >
+          <h3
+            className="StyledHeading-sc-1rdh4aw-0 egvixI"
+            style={
+              Object {
+                "opacity": "1",
+              }
+            }
+          >
+            LFMN
+          </h3>
+          <h3
+            className="StyledHeading-sc-1rdh4aw-0 egvixI"
+            style={
+              Object {
+                "opacity": "1",
+              }
+            }
+          >
+            LFSB
+          </h3>
+        </div>
+        <div
+          className="StyledBox__StyledBoxGap-sc-13pk1d4-1 gySUUq"
+        />
+        <div
+          className="StyledBox-sc-13pk1d4-0 loApRd"
+        >
+          <span
+            className="StyledText-sc-1sadyjn-0 hJPMCL"
+            style={
+              Object {
+                "opacity": "1",
+              }
+            }
+          >
+            07:45
+          </span>
+          <span
+            className="StyledText-sc-1sadyjn-0 hJPMCL"
+            style={
+              Object {
+                "opacity": "1",
+              }
+            }
+          >
+            08:55
+          </span>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Flights Flights Results With Mock Data 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+>
+  <div
+    className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 eujwNl"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 covhNw"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots FlightsSchedule Schedule With Mock Data 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+>
+  <div
+    className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 jFAUMe"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 kVXAnd"
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 kmUNaf"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          style={
+            Object {
+              "borderRadius": "0px",
+              "marginLeft": "0.5rem",
+            }
+          }
+          tabIndex={0}
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 hvpBQs"
+          >
+            <h3
+              className="StyledHeading-sc-1rdh4aw-0 egvixI"
+              style={
+                Object {
+                  "opacity": "1",
+                }
+              }
+            >
+              AS1025
+            </h3>
+          </div>
+          <header
+            className="StyledBox-sc-13pk1d4-0 hBuyNC"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 loApRd"
+            >
+              <h3
+                className="StyledHeading-sc-1rdh4aw-0 egvixI"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                LFSB
+              </h3>
+              <h3
+                className="StyledHeading-sc-1rdh4aw-0 egvixI"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                EDDH
+              </h3>
+            </div>
+            <div
+              className="StyledBox__StyledBoxGap-sc-13pk1d4-1 gySUUq"
+            />
+            <div
+              className="StyledBox-sc-13pk1d4-0 loApRd"
+            >
+              <span
+                className="StyledText-sc-1sadyjn-0 hJPMCL"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                06:20
+              </span>
+              <span
+                className="StyledText-sc-1sadyjn-0 hJPMCL"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                07:50
+              </span>
+            </div>
+          </header>
+        </div>
+        <div
+          className="StyledBox__StyledBoxGap-sc-13pk1d4-1 htfuze"
+        />
+        <div
+          className="StyledBox-sc-13pk1d4-0 kmUNaf"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          style={
+            Object {
+              "borderRadius": "0px",
+              "marginLeft": "0.5rem",
+            }
+          }
+          tabIndex={0}
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 hvpBQs"
+          >
+            <h3
+              className="StyledHeading-sc-1rdh4aw-0 egvixI"
+              style={
+                Object {
+                  "opacity": "1",
+                }
+              }
+            >
+              AS1026
+            </h3>
+          </div>
+          <header
+            className="StyledBox-sc-13pk1d4-0 hBuyNC"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 loApRd"
+            >
+              <h3
+                className="StyledHeading-sc-1rdh4aw-0 egvixI"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                EDDH
+              </h3>
+              <h3
+                className="StyledHeading-sc-1rdh4aw-0 egvixI"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                LFSB
+              </h3>
+            </div>
+            <div
+              className="StyledBox__StyledBoxGap-sc-13pk1d4-1 gySUUq"
+            />
+            <div
+              className="StyledBox-sc-13pk1d4-0 loApRd"
+            >
+              <span
+                className="StyledText-sc-1sadyjn-0 hJPMCL"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                08:20
+              </span>
+              <span
+                className="StyledText-sc-1sadyjn-0 hJPMCL"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                09:45
+              </span>
+            </div>
+          </header>
+        </div>
+        <div
+          className="StyledBox__StyledBoxGap-sc-13pk1d4-1 htfuze"
+        />
+        <div
+          className="StyledBox-sc-13pk1d4-0 kmUNaf"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          style={
+            Object {
+              "borderRadius": "0px",
+              "marginLeft": "0.5rem",
+            }
+          }
+          tabIndex={0}
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 hvpBQs"
+          >
+            <h3
+              className="StyledHeading-sc-1rdh4aw-0 egvixI"
+              style={
+                Object {
+                  "opacity": "1",
+                }
+              }
+            >
+              AS1081
+            </h3>
+          </div>
+          <header
+            className="StyledBox-sc-13pk1d4-0 hBuyNC"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 loApRd"
+            >
+              <h3
+                className="StyledHeading-sc-1rdh4aw-0 egvixI"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                LFSB
+              </h3>
+              <h3
+                className="StyledHeading-sc-1rdh4aw-0 egvixI"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                LEBL
+              </h3>
+            </div>
+            <div
+              className="StyledBox__StyledBoxGap-sc-13pk1d4-1 gySUUq"
+            />
+            <div
+              className="StyledBox-sc-13pk1d4-0 loApRd"
+            >
+              <span
+                className="StyledText-sc-1sadyjn-0 hJPMCL"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                13:50
+              </span>
+              <span
+                className="StyledText-sc-1sadyjn-0 hJPMCL"
+                style={
+                  Object {
+                    "opacity": "1",
+                  }
+                }
+              >
+                15:30
+              </span>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Header Header Web App 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+>
+  <h2
+    className="StyledHeading-sc-1rdh4aw-0 cfZMqo"
+    size="large"
+  >
+    Aircraft Scheduling
+  </h2>
+</div>
+`;
+
+exports[`Storyshots LoadingSpinner Loading Spinner Default 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 eujwNl"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 covhNw"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots SortRadioButtons Sort Radio Buttons Default 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 jgMvuu"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 gmkDAu"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 dnSXwv"
+      role="radiogroup"
+    >
+      <label
+        className="StyledRadioButton__StyledRadioButtonContainer-g1f6ld-0 dKGASN"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 cWAgDf StyledRadioButton-g1f6ld-5 cQxxvY"
+        >
+          <input
+            checked={false}
+            className="StyledRadioButton__StyledRadioButtonInput-g1f6ld-1 bRmCoz"
+            name="radio"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            tabIndex="0"
+            type="radio"
+            value="DestinationDESC"
+          />
+          <div
+            className="StyledBox-sc-13pk1d4-0 bYgAvJ StyledRadioButton__StyledRadioButtonBox-g1f6ld-4 lkJviK"
+          />
+        </div>
+        Destination
+        <svg
+          aria-label="Descend"
+          className="StyledIcon-ofa7kd-0 hVBrNB"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m2 16 6 6 6-6M11 3h11M11 7h8m-8 4h5M8 22V2"
+            fill="none"
+            stroke="#000"
+            strokeWidth="2"
+          />
+        </svg>
+      </label>
+      <div
+        className="StyledBox__StyledBoxGap-sc-13pk1d4-1 jMNBey"
+      />
+      <label
+        className="StyledRadioButton__StyledRadioButtonContainer-g1f6ld-0 dKGASN"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 cWAgDf StyledRadioButton-g1f6ld-5 cQxxvY"
+        >
+          <input
+            checked={false}
+            className="StyledRadioButton__StyledRadioButtonInput-g1f6ld-1 bRmCoz"
+            name="radio"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            tabIndex="-1"
+            type="radio"
+            value="DestinationASC"
+          />
+          <div
+            className="StyledBox-sc-13pk1d4-0 bYgAvJ StyledRadioButton__StyledRadioButtonBox-g1f6ld-4 lkJviK"
+          />
+        </div>
+        Destination
+        <svg
+          aria-label="Ascend"
+          className="StyledIcon-ofa7kd-0 hVBrNB"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m2 8 6-6 6 6m-3 13h11m-11-4h8m-8-4h5M8 2v20"
+            fill="none"
+            stroke="#000"
+            strokeWidth="2"
+          />
+        </svg>
+      </label>
+      <div
+        className="StyledBox__StyledBoxGap-sc-13pk1d4-1 jMNBey"
+      />
+      <label
+        className="StyledRadioButton__StyledRadioButtonContainer-g1f6ld-0 dKGASN"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 cWAgDf StyledRadioButton-g1f6ld-5 cQxxvY"
+        >
+          <input
+            checked={false}
+            className="StyledRadioButton__StyledRadioButtonInput-g1f6ld-1 bRmCoz"
+            name="radio"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            tabIndex="-1"
+            type="radio"
+            value="OriginDESC"
+          />
+          <div
+            className="StyledBox-sc-13pk1d4-0 bYgAvJ StyledRadioButton__StyledRadioButtonBox-g1f6ld-4 lkJviK"
+          />
+        </div>
+        Origin
+        <svg
+          aria-label="Descend"
+          className="StyledIcon-ofa7kd-0 hVBrNB"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m2 16 6 6 6-6M11 3h11M11 7h8m-8 4h5M8 22V2"
+            fill="none"
+            stroke="#000"
+            strokeWidth="2"
+          />
+        </svg>
+      </label>
+      <div
+        className="StyledBox__StyledBoxGap-sc-13pk1d4-1 jMNBey"
+      />
+      <label
+        className="StyledRadioButton__StyledRadioButtonContainer-g1f6ld-0 dKGASN"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 cWAgDf StyledRadioButton-g1f6ld-5 cQxxvY"
+        >
+          <input
+            checked={false}
+            className="StyledRadioButton__StyledRadioButtonInput-g1f6ld-1 bRmCoz"
+            name="radio"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            tabIndex="-1"
+            type="radio"
+            value="OriginASC"
+          />
+          <div
+            className="StyledBox-sc-13pk1d4-0 bYgAvJ StyledRadioButton__StyledRadioButtonBox-g1f6ld-4 lkJviK"
+          />
+        </div>
+        Origin
+        <svg
+          aria-label="Ascend"
+          className="StyledIcon-ofa7kd-0 hVBrNB"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m2 8 6-6 6 6m-3 13h11m-11-4h8m-8-4h5M8 2v20"
+            fill="none"
+            stroke="#000"
+            strokeWidth="2"
+          />
+        </svg>
+      </label>
+      <div
+        className="StyledBox__StyledBoxGap-sc-13pk1d4-1 jMNBey"
+      />
+      <label
+        className="StyledRadioButton__StyledRadioButtonContainer-g1f6ld-0 dKGASN"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 cWAgDf StyledRadioButton-g1f6ld-5 cQxxvY"
+        >
+          <input
+            checked={false}
+            className="StyledRadioButton__StyledRadioButtonInput-g1f6ld-1 bRmCoz"
+            name="radio"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            tabIndex="-1"
+            type="radio"
+            value="DepartureDESC"
+          />
+          <div
+            className="StyledBox-sc-13pk1d4-0 bYgAvJ StyledRadioButton__StyledRadioButtonBox-g1f6ld-4 lkJviK"
+          />
+        </div>
+        Departure
+        <svg
+          aria-label="Descend"
+          className="StyledIcon-ofa7kd-0 hVBrNB"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m2 16 6 6 6-6M11 3h11M11 7h8m-8 4h5M8 22V2"
+            fill="none"
+            stroke="#000"
+            strokeWidth="2"
+          />
+        </svg>
+      </label>
+      <div
+        className="StyledBox__StyledBoxGap-sc-13pk1d4-1 jMNBey"
+      />
+      <label
+        className="StyledRadioButton__StyledRadioButtonContainer-g1f6ld-0 dKGASN"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 cWAgDf StyledRadioButton-g1f6ld-5 cQxxvY"
+        >
+          <input
+            checked={false}
+            className="StyledRadioButton__StyledRadioButtonInput-g1f6ld-1 bRmCoz"
+            name="radio"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            tabIndex="-1"
+            type="radio"
+            value="DepartureASC"
+          />
+          <div
+            className="StyledBox-sc-13pk1d4-0 bYgAvJ StyledRadioButton__StyledRadioButtonBox-g1f6ld-4 lkJviK"
+          />
+        </div>
+        Departure
+        <svg
+          aria-label="Ascend"
+          className="StyledIcon-ofa7kd-0 hVBrNB"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m2 8 6-6 6 6m-3 13h11m-11-4h8m-8-4h5M8 2v20"
+            fill="none"
+            stroke="#000"
+            strokeWidth="2"
+          />
+        </svg>
+      </label>
+      <div
+        className="StyledBox__StyledBoxGap-sc-13pk1d4-1 jMNBey"
+      />
+      <label
+        className="StyledRadioButton__StyledRadioButtonContainer-g1f6ld-0 dKGASN"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 cWAgDf StyledRadioButton-g1f6ld-5 cQxxvY"
+        >
+          <input
+            checked={false}
+            className="StyledRadioButton__StyledRadioButtonInput-g1f6ld-1 bRmCoz"
+            name="radio"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            tabIndex="-1"
+            type="radio"
+            value="ArrivalDESC"
+          />
+          <div
+            className="StyledBox-sc-13pk1d4-0 bYgAvJ StyledRadioButton__StyledRadioButtonBox-g1f6ld-4 lkJviK"
+          />
+        </div>
+        Arrival
+        <svg
+          aria-label="Descend"
+          className="StyledIcon-ofa7kd-0 hVBrNB"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m2 16 6 6 6-6M11 3h11M11 7h8m-8 4h5M8 22V2"
+            fill="none"
+            stroke="#000"
+            strokeWidth="2"
+          />
+        </svg>
+      </label>
+      <div
+        className="StyledBox__StyledBoxGap-sc-13pk1d4-1 jMNBey"
+      />
+      <label
+        className="StyledRadioButton__StyledRadioButtonContainer-g1f6ld-0 dKGASN"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 cWAgDf StyledRadioButton-g1f6ld-5 cQxxvY"
+        >
+          <input
+            checked={false}
+            className="StyledRadioButton__StyledRadioButtonInput-g1f6ld-1 bRmCoz"
+            name="radio"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            tabIndex="-1"
+            type="radio"
+            value="ArrivalASC"
+          />
+          <div
+            className="StyledBox-sc-13pk1d4-0 bYgAvJ StyledRadioButton__StyledRadioButtonBox-g1f6ld-4 lkJviK"
+          />
+        </div>
+        Arrival
+        <svg
+          aria-label="Ascend"
+          className="StyledIcon-ofa7kd-0 hVBrNB"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="m2 8 6-6 6 6m-3 13h11m-11-4h8m-8-4h5M8 2v20"
+            fill="none"
+            stroke="#000"
+            strokeWidth="2"
+          />
+        </svg>
+      </label>
+    </div>
+  </div>
+</div>
+`;

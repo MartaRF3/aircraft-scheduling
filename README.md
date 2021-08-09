@@ -85,12 +85,12 @@ https://v2.grommet.io/ https://storybook.grommet.io/?path=/story/all--all
 
 ## Storybook
 
-This WebApp includes a storie pro component integrated with MockServiceWorker in
+This WebApp includes a story pro component integrated with MockServiceWorker in
 order to catch APICalls and mock them. (https://mswjs.io/ and
 https://www.npmjs.com/package/msw-storybook-addon)
 
 Also is integrated snapshottesting pro story, the snapshots pro story will be
-created by npm run test.
+created by npm run test. Which will allow us create unit testing easy from our stories.
 (https://www.npmjs.com/package/@storybook/addon-storyshots)
 
 ## HTTP client

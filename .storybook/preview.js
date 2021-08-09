@@ -4,10 +4,10 @@ import { addDecorator } from "@storybook/react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { AppContext } from "../src/context/AppContext";
-import { initializeWorker, mswDecorator } from "msw-storybook-addon";
+import { initialize, mswDecorator } from "msw-storybook-addon";
 import { SortOption } from "../src/types/AppContextTypes";
 
-initializeWorker();
+initialize();
 addDecorator(mswDecorator);
 
 const theme = {
