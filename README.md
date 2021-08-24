@@ -1,4 +1,4 @@
-# Getting Started with Github Users Finder
+# Getting Started with Aircraft Scheduling
 
 This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
