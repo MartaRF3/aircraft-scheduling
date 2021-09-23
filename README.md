@@ -3,7 +3,7 @@
 This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
 
-The main goal of this app is to provide our COO with a friendly GUI, in
+The main goal of this project is to provide our COO with a friendly GUI, in
 order to manage the daily rotation of our aircraft airlane.
 
 - The GUI is designed so that our COO has a global view of our aircrafts, and once she clicks on one of them she can enter the scheduling mode of the selected aircraft by clicking on the available flights.
